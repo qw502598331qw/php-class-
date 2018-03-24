@@ -1,0 +1,25 @@
+<div class="ladytop">
+            <div class="nav">
+                <div class="left"><a href="{:url('index/index')}"><img src="__PUBLIC__/images
+/hunshang.png" alt="实验室"></a></div>
+                <div class="right">
+                    <div class="box">
+                    <a href="{:url('index/index')}"  rel='dropmenu209'>首页</a> 
+                     {volist name="cateres" id="vo"}
+                        <a href="{:url('cate/index',array('cateid'=>$vo['id']))}"  rel='dropmenu209'>{$vo.catename}</a> 
+                     {/volist}
+                    </div>
+                  <a href="http://localhost/class/public/index.php/admin/login/index.html"><img src="__PUBLIC__/images
+/denglu.png" height="30" width="80"  alt="实验室"></a></div>
+                </div>
+        </div>
+
+<div class="hotmenu">
+	<div class="con">标签栏：
+   <!-- <a href="http://www.chuanke.com/s2260700.html" target="_blank" style="color:#f00;">全体信息</a>-->
+    {volist name="tagres" id="vo"}
+        <a href='{:url('search/index',array('keywords'=>$vo['tagname']))}'>{$vo.tagname}</a>
+
+    {/volist}
+    </div>
+</div>
