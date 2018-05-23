@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\index\index.htm";i:1519998631;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1521026509;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1519997778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\index\index.htm";i:1519998631;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1521026509;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1521199053;}*/ ?>
 <!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
@@ -149,34 +149,34 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                         </ul>                            
                     </li> 
 
-                    <!--<li>
+                    <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-link"></i>
-                            <span class="menu-text">友情链接</span>
+                            <span class="menu-text">完成度</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="<?php echo url('links/lst'); ?>">
                                     <span class="menu-text">
-                                        链接列表                                   </span>
+                                        完成度查询                                   </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                         </ul>                            
                     </li> 
-                    -->
+
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-gear"></i>
-                            <span class="menu-text">系统</span>
+                            <span class="menu-text">标签</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="<?php echo url('tags/lst'); ?>">
                                     <span class="menu-text">
-                                        Tags标签管理                                  </span>
+                                        标签管理                                  </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>

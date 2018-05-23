@@ -19,7 +19,7 @@ class Admin extends Base
 
 			$data=[
     			'username'=>input('username'),
-    			'password'=>input('password'),
+    			'password'=>md5(input('password')),
                 'user'=>input('cateid'),
     		];
     		$validate = \think\Loader::validate('Admin');

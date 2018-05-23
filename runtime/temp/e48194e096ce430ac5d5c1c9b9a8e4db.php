@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:83:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\article\edit.htm";i:1520388793;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1475309002;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1519997778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:83:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\article\edit.htm";i:1520388878;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1521026509;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1521199053;}*/ ?>
 <!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
@@ -153,34 +153,34 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                         </ul>                            
                     </li> 
 
-                    <!--<li>
+                    <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-link"></i>
-                            <span class="menu-text">友情链接</span>
+                            <span class="menu-text">完成度</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="<?php echo url('links/lst'); ?>">
                                     <span class="menu-text">
-                                        链接列表                                   </span>
+                                        完成度查询                                   </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                         </ul>                            
                     </li> 
-                    -->
+
                     <li>
                         <a href="#" class="menu-dropdown">
                             <i class="menu-icon fa fa-gear"></i>
-                            <span class="menu-text">系统</span>
+                            <span class="menu-text">标签</span>
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
                             <li>
                                 <a href="<?php echo url('tags/lst'); ?>">
                                     <span class="menu-text">
-                                        Tags标签管理                                  </span>
+                                        标签管理                                  </span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
@@ -243,7 +243,7 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                             </div>
                         </div>  
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">文章描述</label>
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">公告简略</label>
                             <div class="col-sm-6">
                                 <textarea name="desc" class="form-control"><?php echo $articles['desc']; ?></textarea>
                             </div>
@@ -260,10 +260,10 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属栏目</label>
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属年级</label>
                             <div class="col-sm-6">
                                 <select name="cateid">
-                                    <option value="">请选择栏目</option>
+                                    <option value="">请选择年级</option>
                                     <?php if(is_array($cateres) || $cateres instanceof \think\Collection): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                     <option <?php if($vo['id'] == $articles['cateid']): ?>selected="selected"<?php endif; ?> value="<?php echo $vo['id']; ?>"><?php echo $vo['catename']; ?></option>
                                     <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -272,7 +272,7 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                             <p class="help-block col-sm-4 red">* 必填<div></p>
                         </div>
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">是否推荐</label>
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">是否重要</label>
                             <div class="col-sm-6">
                                  <label>
                                     <input <?php if($articles['state'] == 1): ?>checked="checked"<?php endif; ?> class="checkbox-slider colored-darkorange" name="state" type="checkbox">
@@ -281,7 +281,7 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">文章内容</label>
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">公告内容</label>
                             <div class="col-sm-6">
                                  <label>
                                     <textarea name="content"  id="content"><?php echo $articles['content']; ?></textarea>

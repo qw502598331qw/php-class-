@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\admin\edit.htm";i:1521206638;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1521026509;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1521199053;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\admin\edit.htm";i:1521206668;s:81:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\top.htm";i:1521026509;s:82:"D:\PHPstudy\PHPTutorial\WWW\class\public/../application/admin\view\common\left.htm";i:1521199053;}*/ ?>
 <!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
@@ -235,7 +235,7 @@ src="__PUBLIC__/images/adam-jansen.jpg">
                             <p class="help-block col-sm-4 red">* 留空则表示不修改密码</p>
                         </div>
                         <div class="form-group">
-                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属栏目</label>
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属年级</label>
                             <div class="col-sm-6">
                                 <select name="cateid">
                                     <option value="">请选年级</option>
